@@ -1,0 +1,6 @@
+Error in <TSystem::ExpandFileName>: input: $HOME/.root.mimes, output: $HOME/.root.mimes
+cling::DynamicLibraryManager::loadLibrary(): libOpenGL.so.0: cannot open shared object file: No such file or directory
+Error in <TInterpreter::TCling::AutoLoad>: failure loading library libRGL.so for TGLHistPainter
+cling::DynamicLibraryManager::loadLibrary(): libOpenGL.so.0: cannot open shared object file: No such file or directory
+Info in <TCanvas::Print>: png file ./images/primaries_1620rate_70Ar_30CO2.png has been created
+Info in <TH1F::SaveAs>: ROOT file ./data/primaries_1620rate_70Ar_30CO2.root has been created

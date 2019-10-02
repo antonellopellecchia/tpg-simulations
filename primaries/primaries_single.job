@@ -1,0 +1,11 @@
+universe = vanilla
+executable = /lustrehome/antonellopellecchia/simulations/primaries/primaries_single.sh
+output = job/primaries_single.out
+error = job/primaries_single.error
+log = job/primaries_single.log
+notification = Always
+notify_user = Antonello.Pellecchia@ba.infn.it
+request_memory = 2 GB
+request_cpus = 2
+rank = Memory
+queue

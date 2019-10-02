@@ -1,0 +1,10 @@
+universe = vanilla
+executable = /lustrehome/antonellopellecchia/simulations/gastable/gastable.sh
+output = job/gastable.out
+error = job/gastable.error
+log = job/gastable.log
+notify_user = Antonello.Pellecchia@ba.infn.it
+request_memory = 4 GB
+request_cpus = 4
+rank = Memory
+queue

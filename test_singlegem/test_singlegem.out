@@ -1,0 +1,906 @@
+
+ ANSYS Academic Research                           
+ Release 17.2
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products Release 17.2   
+ ANSYS Mechanical Products Release 17.2  
+ ANSYS Customization Files for User Programmable Features Release 17.2   
+ ANSYS Autodyn Release 17.2  
+ ANSYS CFX (includes ANSYS CFD-Post) Release 17.2
+ ANSYS Fluent (includes ANSYS CFD-Post) Release 17.2 
+ ANSYS TurboGrid Release 17.2
+ ANSYS Polyflow (includes ANSYS CFD-Post) Release 17.2   
+ ANSYS CFD-Post only Release 17.2
+ ANSYS Forte Release 17.2
+ ANSYS ICEM CFD Release 17.2 
+ ANSYS Composite PrepPost Release 17.2   
+ ANSYS Icepak (includes ANSYS CFD-Post) Release 17.2 
+ ACIS Release 17.2   
+ Catia, Version 5 Release 17.2   
+ NX Release 17.2 
+ Parasolid Release 17.2  
+ ANSYS, Inc. License Manager Release 17.2
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  INITIAL JOBNAME              = test_singlegem                                                                                                                                                                                                                                          
+  SHARED MEMORY PARALLEL REQUESTED
+    SINGLE PROCESS WITH  15 THREADS REQUESTED
+    TOTAL OF    15 CORES REQUESTED
+  DESIGNXPLORER REQUESTED
+  START-UP FILE MODE           = READ  
+  STOP FILE MODE               = READ  
+  GRAPHICS DEVICE REQUESTED    = X11     
+  GRAPHICAL ENTRY              = YES   
+  LANGUAGE                     = en-us               
+  INITIAL DIRECTORY = /home/data/antonello/test_singlegem
+
+ RELEASE= Release 17.2         BUILD= 17.2      UP20160718   VERSION=LINUX x64   
+ CURRENT JOBNAME=test_singlegem  11:44:25  AUG 13, 2019 CP=      0.298
+
+
+ /SHOW SET WITH DRIVER NAME= X11     ,  RASTER MODE,  GRAPHIC PLANES =  8
+
+ RUN SETUP PROCEDURE FROM FILE= /home/piet/ansys172-install/ansys_inc/v172/ansys/apdl/start.ans
+
+ /INPUT FILE= menust.tmp  LINE=       0
+
+ /INPUT FILE= /home/piet/ansys172-install/ansys_inc/v172/ansys/apdl/start.ans  LINE=       0
+ ACTIVATING THE GRAPHICAL USER INTERFACE (GUI).  PLEASE WAIT...
+Creating the GUI panes
+Creating the GUI menubar
+Creating the GUI status
+Creating the GUI Graphics Context
+Creating the Application Context
+ ************************************************************
+ ******************** NO SPACEBALL FOUND ********************
+ ************************************************************
+Creating the GUI toolbar
+Creating the GUI toolbar - "Standard Toolbar"
+Creating the GUI toolbar - "Main Menu"
+Creating the GUI toolbar - "Toolbar"
+Creating the GUI toolbar - "Graphical View"
+
+ CUTTING PLANE SET TO THE WORKING PLANE
+Welcome to ANSYS
+
+ PRODUCE NODAL PLOT IN DSYS=  0
+ TURN OFF WORKING PLANE DISPLAY
+
+ /INPUT FILE= input.in  LINE=       1
+
+ CLEAR DATABASE AND RERUN START.ANS
+
+ RUN SETUP PROCEDURE FROM FILE= /home/piet/ansys172-install/ansys_inc/v172/ansys/apdl/start.ans
+
+ ANSYS Academic Research                           
+
+ /INPUT FILE= /home/piet/ansys172-install/ansys_inc/v172/ansys/apdl/start.ans  LINE=       0
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 17.2     17.2     ***
+ ANSYS Academic Research                           
+ 00610028  VERSION=LINUX x64     11:49:48  AUG 13, 2019 CP=      1.702
+
+                                                                               
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+
+ ENTER  /SHOW,DEVICE-NAME  TO ENABLE GRAPHIC DISPLAY
+ ENTER  FINISH             TO LEAVE PREP7
+ PRINTOUT KEY SET TO /GOPR (USE /NOPR TO SUPPRESS)
+
+ DO NOT USE THE p-METHOD SOLUTION PROCEDURE
+
+ SET KEYWORDS
+   PR_ELMAG =     1
+
+ SET KEYWORDS
+   MAGELC   =     1
+
+ ELEMENT TYPE       1 IS SOLID123     3-D 10-NODE ELECTROST SOLID 
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ CURRENT NODAL DOF SET IS  VOLT
+  THREE-DIMENSIONAL MODEL
+
+ MATERIAL         1     PERX =  0.1000000E+11  
+
+ MATERIAL         1     RSVX =   0.000000      
+
+ MATERIAL         2     PERX =   1.000000      
+
+ MATERIAL         3     PERX =   4.000000      
+
+ PARAMETER PITCH =    0.1400000000    
+
+ PARAMETER KAPTON =    0.5000000000E-01
+
+ PARAMETER METAL =    0.5000000000E-02
+
+ PARAMETER OUTDIA =    0.7000000000E-01
+
+ PARAMETER MIDDIA =    0.5000000000E-01
+
+ PARAMETER DRIFT =     1.000000000    
+
+ PARAMETER INDUCT =    -1.000000000    
+
+ PARAMETER RIM =    0.8000000000E-01
+
+ CREATE A HEXAHEDRAL VOLUME WITH
+ X-DISTANCES FROM      0.000000000     TO     0.7000000000E-01
+ Y-DISTANCES FROM      0.000000000     TO     0.1212435565    
+ Z-DISTANCES FROM    -0.2500000000E-01 TO     0.2500000000E-01
+
+      OUTPUT VOLUME =     1
+
+ CREATE A HEXAHEDRAL VOLUME WITH
+ X-DISTANCES FROM      0.000000000     TO     0.7000000000E-01
+ Y-DISTANCES FROM      0.000000000     TO     0.1212435565    
+ Z-DISTANCES FROM    -0.3000000000E-01 TO    -0.2500000000E-01
+
+      OUTPUT VOLUME =     2
+
+ CREATE A HEXAHEDRAL VOLUME WITH
+ X-DISTANCES FROM      0.000000000     TO     0.7000000000E-01
+ Y-DISTANCES FROM      0.000000000     TO     0.1212435565    
+ Z-DISTANCES FROM     0.2500000000E-01 TO     0.3000000000E-01
+
+      OUTPUT VOLUME =     3
+
+ CREATE A HEXAHEDRAL VOLUME WITH
+ X-DISTANCES FROM      0.000000000     TO     0.7000000000E-01
+ Y-DISTANCES FROM      0.000000000     TO     0.1212435565    
+ Z-DISTANCES FROM     -1.000000000     TO      1.000000000    
+
+      OUTPUT VOLUME =     4
+
+ CREATE A CONICAL VOLUME WITH
+ BOTTOM END RADIUS    =     0.3500000000E-01
+ TOP    END RADIUS    =     0.2500000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM      -0.2500000000E-01 TO      0.000000000    
+
+      OUTPUT VOLUME =     5
+
+ CREATE A CONICAL VOLUME WITH
+ BOTTOM END RADIUS    =     0.2500000000E-01
+ TOP    END RADIUS    =     0.3500000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM        0.000000000     TO     0.2500000000E-01
+
+      OUTPUT VOLUME =     6
+
+ MOVE WORKING PLANE'S FOCUS POINT 
+      0.0000     UNITS ALONG THE WORKING PLANE'S X-AXIS
+      0.0000     UNITS ALONG THE WORKING PLANE'S Y-AXIS
+     0.25000E-01 UNITS ALONG THE WORKING PLANE'S Z-AXIS
+
+ CREATE A CYLINDRICAL VOLUME WITH
+ INNER RADIUS         =      0.000000000    
+ OUTER RADIUS         =     0.4000000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM        0.000000000     TO     0.5000000000E-02
+
+      OUTPUT VOLUME =     7
+
+ MOVE WORKING PLANE'S FOCUS POINT 
+      0.0000     UNITS ALONG THE WORKING PLANE'S X-AXIS
+      0.0000     UNITS ALONG THE WORKING PLANE'S Y-AXIS
+    -0.50000E-01 UNITS ALONG THE WORKING PLANE'S Z-AXIS
+
+ CREATE A CYLINDRICAL VOLUME WITH
+ INNER RADIUS         =      0.000000000    
+ OUTER RADIUS         =     0.4000000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM      -0.5000000000E-02 TO      0.000000000    
+
+      OUTPUT VOLUME =     8
+
+ MOVE WORKING PLANE'S FOCUS POINT 
+      0.0000     UNITS ALONG THE WORKING PLANE'S X-AXIS
+      0.0000     UNITS ALONG THE WORKING PLANE'S Y-AXIS
+     0.25000E-01 UNITS ALONG THE WORKING PLANE'S Z-AXIS
+
+ ADD VOLUMES
+      INPUT VOLUMES =     5    6    7    8
+      INPUT VOLUMES WILL BE DELETED IF POSSIBLE
+      OUTPUT VOLUMES =     9
+
+ MOVE WORKING PLANE'S FOCUS POINT 
+     0.70000E-01 UNITS ALONG THE WORKING PLANE'S X-AXIS
+     0.12124     UNITS ALONG THE WORKING PLANE'S Y-AXIS
+      0.0000     UNITS ALONG THE WORKING PLANE'S Z-AXIS
+
+ CREATE A CONICAL VOLUME WITH
+ BOTTOM END RADIUS    =     0.3500000000E-01
+ TOP    END RADIUS    =     0.2500000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM      -0.2500000000E-01 TO      0.000000000    
+
+      OUTPUT VOLUME =     5
+
+ CREATE A CONICAL VOLUME WITH
+ BOTTOM END RADIUS    =     0.2500000000E-01
+ TOP    END RADIUS    =     0.3500000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM        0.000000000     TO     0.2500000000E-01
+
+      OUTPUT VOLUME =     6
+
+ MOVE WORKING PLANE'S FOCUS POINT 
+      0.0000     UNITS ALONG THE WORKING PLANE'S X-AXIS
+      0.0000     UNITS ALONG THE WORKING PLANE'S Y-AXIS
+     0.25000E-01 UNITS ALONG THE WORKING PLANE'S Z-AXIS
+
+ CREATE A CYLINDRICAL VOLUME WITH
+ INNER RADIUS         =      0.000000000    
+ OUTER RADIUS         =     0.4000000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM        0.000000000     TO     0.5000000000E-02
+
+      OUTPUT VOLUME =     7
+
+ MOVE WORKING PLANE'S FOCUS POINT 
+      0.0000     UNITS ALONG THE WORKING PLANE'S X-AXIS
+      0.0000     UNITS ALONG THE WORKING PLANE'S Y-AXIS
+    -0.50000E-01 UNITS ALONG THE WORKING PLANE'S Z-AXIS
+
+ CREATE A CYLINDRICAL VOLUME WITH
+ INNER RADIUS         =      0.000000000    
+ OUTER RADIUS         =     0.4000000000E-01
+ STARTING THETA ANGLE =      0.000000000    
+ ENDING   THETA ANGLE =      360.0000000    
+ END Z-DISTANCES FROM      -0.5000000000E-02 TO      0.000000000    
+
+      OUTPUT VOLUME =     8
+
+ MOVE WORKING PLANE'S FOCUS POINT 
+      0.0000     UNITS ALONG THE WORKING PLANE'S X-AXIS
+      0.0000     UNITS ALONG THE WORKING PLANE'S Y-AXIS
+     0.25000E-01 UNITS ALONG THE WORKING PLANE'S Z-AXIS
+
+ ADD VOLUMES
+      INPUT VOLUMES =     5    6    7    8
+      INPUT VOLUMES WILL BE DELETED IF POSSIBLE
+      OUTPUT VOLUMES =    10
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       1
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =       9
+      OUTPUT VOLUMES =     5
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       5
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =      10
+      OUTPUT VOLUMES =     1
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       2
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =       9
+      OUTPUT VOLUMES =     5
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       5
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =      10
+      OUTPUT VOLUMES =     2
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       3
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =       9
+      OUTPUT VOLUMES =     5
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       5
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =      10
+      OUTPUT VOLUMES =     3
+
+ DELETE SELECTED VOLUMES FROM      9 TO     10 BY      1
+
+     DELETED    2 VOLUMES
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       4
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =       1
+      OUTPUT VOLUMES =     5
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       5
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =       2
+      OUTPUT VOLUMES =     4
+
+ SUBTRACT VOLUMES
+
+      VOLUME NUMBERS TO BE OPERATED ON =       4
+      VOLUMES OPERATED ON WILL BE DELETED IF POSSIBLE
+      VOLUME NUMBERS TO BE SUBTRACTED  =       3
+      OUTPUT VOLUMES =     5
+
+ GLUE VOLUMES
+      INPUT VOLUMES =     1    2    3    5
+      INPUT VOLUMES WILL BE DELETED IF POSSIBLE
+      OUTPUT VOLUMES =     1    4    5    6
+ VOLU 4 COLOR SET TO GREEN                            
+ VOLU 5 COLOR SET TO RED                              
+ VOLU 6 COLOR SET TO BLUE                             
+ VOLU 1 COLOR SET TO ORANGE                           
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         1 TO          1 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SET ATTRIBUTES FOR ALL SELECTED VOLUMES
+      MAT =    3   REAL =       0   TYPE =    1   ESYS =    0   SECT =    0
+
+ ATTRIBUTES SET FOR      1 VOLUMES (OUT OF      1 SELECTED)
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         4 TO          4 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SET ATTRIBUTES FOR ALL SELECTED VOLUMES
+      MAT =    1   REAL =       0   TYPE =    1   ESYS =    0   SECT =    0
+
+ ATTRIBUTES SET FOR      1 VOLUMES (OUT OF      1 SELECTED)
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         5 TO          5 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SET ATTRIBUTES FOR ALL SELECTED VOLUMES
+      MAT =    2   REAL =       0   TYPE =    1   ESYS =    0   SECT =    0
+
+ ATTRIBUTES SET FOR      1 VOLUMES (OUT OF      1 SELECTED)
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         6 TO          6 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SET ATTRIBUTES FOR ALL SELECTED VOLUMES
+      MAT =    1   REAL =       0   TYPE =    1   ESYS =    0   SECT =    0
+
+ ATTRIBUTES SET FOR      1 VOLUMES (OUT OF      1 SELECTED)
+
+ SELECT       FOR ITEM=LOC  COMPONENT=Z     BETWEEN  1.0000     AND   1.0000    
+   KABS=  0.  TOLERANCE= 0.500000E-02
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABELS = VOLT
+      VALUES =     -200.00         0.0000    
+
+ SELECT       FOR ITEM=LOC  COMPONENT=Z     BETWEEN -1.0000     AND  -1.0000    
+   KABS=  0.  TOLERANCE= 0.500000E-02
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABELS = VOLT
+      VALUES =      350.00         0.0000    
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         5 TO          5 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       20  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=X     BETWEEN  0.0000     AND   0.0000    
+   KABS=  0.  TOLERANCE= 0.100000E-05
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         5 TO          5 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       20  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=X     BETWEEN 0.70000E-01 AND  0.70000E-01
+   KABS=  0.  TOLERANCE= 0.350000E-03
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         5 TO          5 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       20  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=Y     BETWEEN  0.0000     AND   0.0000    
+   KABS=  0.  TOLERANCE= 0.100000E-05
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         5 TO          5 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       20  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=Y     BETWEEN 0.12124     AND  0.12124    
+   KABS=  0.  TOLERANCE= 0.606218E-03
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         1 TO          1 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       14  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=X     BETWEEN  0.0000     AND   0.0000    
+   KABS=  0.  TOLERANCE= 0.100000E-05
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         1 TO          1 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       14  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=X     BETWEEN 0.70000E-01 AND  0.70000E-01
+   KABS=  0.  TOLERANCE= 0.350000E-03
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         1 TO          1 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       14  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=Y     BETWEEN  0.0000     AND   0.0000    
+   KABS=  0.  TOLERANCE= 0.100000E-05
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         1 TO          1 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       14  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ RESELECT     FOR ITEM=LOC  COMPONENT=Y     BETWEEN 0.12124     AND  0.12124    
+   KABS=  0.  TOLERANCE= 0.606218E-03
+
+        1  AREAS (OF       58  DEFINED) SELECTED BY  ASEL  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABEL = SYMM
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         4 TO          4 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+        8  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABELS = VOLT
+      VALUES =      150.00         0.0000    
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         6 TO          6 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+        8  AREAS (OF       58  DEFINED) SELECTED FROM 
+        1 SELECTED VOLUMES BY  ASLV  COMMAND.
+
+ CONSTRAINT AT ALL SELECTED AREAS
+      LOAD LABELS = VOLT
+      VALUES =     -150.00         0.0000    
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         1 TO          7 STEP          1
+
+        4  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ SELECT      ALL AREAS HAVING ANY VOLUMES IN SELECTED VOLUME SET.
+
+       34  AREAS (OF       58  DEFINED) SELECTED FROM 
+        4 SELECTED VOLUMES BY  ASLV  COMMAND.
+ USE THE FREE MESHER.
+
+ RESET SMART SIZING PARAMETERS
+      SIZE LEVEL                                      =      1
+      SMART SIZING SCALE               FACTOR         =  0.20000    
+      AREA INTERNAL EXPANSION          FACTOR         =   1.0000    
+      AREA INTERNAL TRANSITION CONTROL FACTOR         =   2.0000    
+      SPANNED ANGLE PER ELEMENT (LOW  ORDER ELEMENTS) =      7
+      SPANNED ANGLE PER ELEMENT (HIGH ORDER ELEMENTS) =     15
+      GROWTH RATIO FOR PROXIMITY CHECK                =   1.4000    
+      MAXIMUM NUMBER OF ITERATIONS                    =      4
+      SURFACE PROXIMITY REFINEMENT IS                     OFF 
+      SMALL HOLE COARSENING IS                            OFF 
+
+ SELECT       FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         1 TO          1 STEP          1
+
+        1  VOLUMES (OF        4  DEFINED) SELECTED BY  VSEL  COMMAND.
+
+ ALSO SELECT  FOR ITEM=VOLU COMPONENT=    
+  IN RANGE         5 TO          5 STEP          1
+
+        2  VOLUMES (OF        4  DEFINED) SELECTED BY VSEL COMMAND.
+
+ GENERATE NODES AND ELEMENTS   IN  ALL  SELECTED VOLUMES  
+
+ Performing SmartSizing 
+
+ SmartSizing Completed 
+
+ Initiating meshing of volume 1 exterior.                                
+
+ Meshing of volume 1 exterior is complete.  Facet count = 1212.          
+
+ Initiating meshing of volume 1 interior.                                
+  Estimated number of elements to fill this volume = 6800.               
+  Estimated number of nodes = 8600.                                      
+
+ Begin meshing of volume      1
+ Completed pre-check of triangle facets 
+
+ Meshing of volume 1 is complete.                                        
+  Now storing 6334 nodes and 5615 elements.                              
+
+ Initiating meshing of volume 5 exterior.                                
+
+ Meshing of volume 5 exterior is complete.  Facet count = 1708.          
+
+ Initiating meshing of volume 5 interior.                                
+  Estimated number of elements to fill this volume = 15600.              
+  Estimated number of nodes = 19600.                                     
+
+ Begin meshing of volume      5
+ Completed pre-check of triangle facets 
+
+ Meshing of volume 5 is complete.                                        
+  Now storing 2636 nodes and 3136 elements.                              
+
+ NUMBER OF VOLUMES MESHED   =         2
+ MAXIMUM NODE NUMBER        =     14050
+ MAXIMUM ELEMENT NUMBER     =      8751
+
+ PRODUCE ELEMENT PLOT IN DSYS =   0
+
+
+ ***** ROUTINE COMPLETED *****  CP =        16.010
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ TRANSFER SOLID MODEL BOUNDARY CONDITIONS TO FINITE ELEMENT MODEL
+
+ *** WARNING ***                         CP =      16.019   TIME= 11:50:23
+ Area 21 has no nodes associated with it.  Constraint(s) not             
+ transferred.                                                            
+
+ *** WARNING ***                         CP =      16.019   TIME= 11:50:23
+ Area 22 has no nodes associated with it.  Constraint(s) not             
+ transferred.                                                            
+
+ *** WARNING ***                         CP =      16.019   TIME= 11:50:24
+ Area 23 has no nodes associated with it.  Constraint(s) not             
+ transferred.                                                            
+
+ *** WARNING ***                         CP =      16.020   TIME= 11:50:24
+ Area 24 has no nodes associated with it.  Constraint(s) not             
+ transferred.                                                            
+
+ *** WARNING ***                         CP =      16.031   TIME= 11:50:24
+ Area 65 has no nodes associated with it.  Constraint(s) not             
+ transferred.                                                            
+
+ ************************************************************************
+ The number of ERROR and WARNING messages exceeds 5.                     
+ Additional messages suppressed.  See (                                  
+ /home/data/antonello/test_singlegem/test_singlegem.err ) for suppressed 
+ messages.                                                               
+ ************************************************************************
+      CONSTRAINTS    TRANSFERRED FROM AREAS         =   2886
+      SYMM/ASYM CONSTRAINTS      FROM AREAS         =      0
+
+ *** NOTE ***                            CP =      17.764   TIME= 11:50:25
+ There is no title defined for this analysis.                            
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . VOLT
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** NOTE ***                            CP =      20.147   TIME= 11:50:25
+ Present time 0 is less than or equal to the previous time.  Time will   
+ default to 1.                                                           
+
+ *** NOTE ***                            CP =      20.952   TIME= 11:50:25
+ Results printout suppressed for interactive execute.                    
+
+ *** NOTE ***                            CP =      20.952   TIME= 11:50:25
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS. . . . . . . . . . . .ALL DATA WRITTEN
+                                                  FOR THE LAST SUBSTEP
+
+
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 1.109545384E-12 at element 1679.                              
+ Minimum = 1.521442586E-14 at element 7238.                              
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+  TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+     1      8751  SOLID123      5.585   0.000638
+ Time at end of element matrix formulation CP = 25.9400558.              
+
+ SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =       11332,    Maximum wavefront =    122
+  Memory allocated for solver =          36.508 MB
+  Memory required for in-core =          21.230 MB
+  Memory required for out-of-core =       5.594 MB
+
+
+ *** NOTE ***                            CP =      30.908   TIME= 11:50:26
+ The Sparse Matrix solver is currently running in the in-core memory     
+ mode.  This memory mode uses the most amount of memory in order to      
+ avoid using the hard drive as much as possible, which most often        
+ results in the fastest solution time.  This mode is recommended if      
+ enough physical memory is present to accommodate all of the solver      
+ data.                                                                   
+ curEqn=  11332  totEqn=  11332 Job CP sec=     31.830
+      Factor Done= 100% Factor Wall sec=      0.100 rate=    5034.4 Mflops
+ Sparse solver maximum pivot= 2.576255218E-12 at node 13785 VOLT.        
+ Sparse solver minimum pivot= 3.698510979E-14 at node 382 VOLT.          
+ Sparse solver minimum pivot in absolute value= 3.698510979E-14 at node  
+ 382 VOLT.                                                               
+
+   *** ELEMENT RESULT CALCULATION TIMES
+  TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+     1      8751  SOLID123     19.264   0.002201
+
+   *** NODAL LOAD CALCULATION TIMES
+  TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+     1      8751  SOLID123      3.379   0.000386
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
+ *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+
+ *** NOTE ***                            CP =      49.327   TIME= 11:50:37
+ Solution is done!                                                       
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        2.500 MB WRITTEN ON ELEMENT SAVED DATA FILE: test_singlegem.esav
+        3.500 MB WRITTEN ON ASSEMBLED MATRIX FILE: test_singlegem.full
+        7.562 MB WRITTEN ON RESULTS FILE: test_singlegem.rth
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =        49.386
+
+
+
+ *** NOTE ***                            CP =      49.386   TIME= 11:50:45
+ A total of 8 warnings and errors written to                             
+ /home/data/antonello/test_singlegem/test_singlegem.err.                 
+
+          ***** ANSYS RESULTS INTERPRETATION (POST1) *****
+
+ ENTER  /SHOW,DEVICE-NAME  TO ENABLE GRAPHIC DISPLAY
+ ENTER  FINISH             TO LEAVE POST1
+
+ *** NOTE ***                            CP =      49.389   TIME= 11:50:45
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Element faceting set to 1 facets per edge.
+
+ DISPLAY NODAL SOLUTION,  ITEM=VOLT  COMP=                  
+
+ /OUTPUT FILE= PRNSOL.lis
+
+ /OUTPUT FILE= NLIST.lis
+
+ /OUTPUT FILE= ELIST.lis
+
+ /OUTPUT FILE= MPLIST.lis
+
+ EXIT THE ANSYS POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =        60.305
+
+
+
+ *** NOTE ***                            CP =      60.305   TIME= 11:54:35
+ A total of 8 warnings and errors written to                             
+ /home/data/antonello/test_singlegem/test_singlegem.err.                 
+
+ PURGE ALL SOLUTION AND POST DATA
+ SAVE ALL MODEL DATA
+
+ ALL CURRENT ANSYS DATA WRITTEN TO FILE NAME= test_singlegem.db
+  FOR POSSIBLE RESUME FROM THIS POINT
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          8
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
+ DATA INPUT WRITTEN ON /home/data/antonello/test_singlegem/test_singlegem.log                                                                                                                                                                                                              
+
++--------------------- A N S Y S   S T A T I S T I C S ------------------------+
+
+Release: Release 17.2       Build: 17.2       Update: UP20160718   Platform: LINUX x64   
+Date Run: 08/13/2019   Time: 11:54
+Operating System: Scientific Linux release 6.7 (Carbon)
+
+Processor Model: Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 15.0.2  (Build: 20150121)
+          Intel(R) C/C++ Compiler Version 15.0.2  (Build: 20150121)
+          Intel(R) Math Kernel Library Version 11.2.3 Product Build 20150409
+
+Number of machines requested            :    1
+Total number of cores available         :   32
+Number of physical cores available      :   16
+Number of processes requested           :    1
+Number of threads per process requested :   15
+Total number of cores requested         :   15 (Shared Memory Parallel)                    
+
+GPU Acceleration: Not Requested
+
+Job Name: test_singlegem
+Working Directory: /home/data/antonello/test_singlegem
+
+Total CPU time for main thread                    :        6.4 seconds
+Total CPU time summed for all threads             :       60.4 seconds
+
+Elapsed time spent pre-processing model (/PREP7)  :       34.9 seconds
+Elapsed time spent solution - preprocessing       :        0.4 seconds
+Elapsed time spent computing solution             :       19.0 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :      229.6 seconds
+ 
+Equation solver used                              :            Sparse (symmetric)
+Equation solver computational rate                :     4923.5 Mflops
+Equation solver effective I/O rate                :     2916.3 MB/sec
+
+Maximum total memory used                         :      100.0 MB
+Maximum total memory allocated                    :     2112.0 MB
+Maximum total memory available                    :        252 GB
+
++------------------ E N D   A N S Y S   S T A T I S T I C S -------------------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                            ANSYS RUN COMPLETED                            |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys Release 17.2          Build 17.2         UP20160718     LINUX x64   |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used      25 MB    Maximum Scratch Memory Used     75 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =         60.384       Time  =  11:54:35        |
+ |        Elapsed Time (sec) =        613.000       Date  =  08/13/2019      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

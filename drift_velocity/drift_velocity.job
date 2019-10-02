@@ -1,0 +1,10 @@
+universe = vanilla
+executable = /lustrehome/antonellopellecchia/simulations/drift_velocity/drift_velocity.sh
+output = job/drift_velocity.out
+error = job/drift_velocity.error
+log = job/drift_velocity.log
+notify_user = Antonello.Pellecchia@ba.infn.it
+request_memory = 4 GB
+request_cpus = 4
+rank = Memory
+queue

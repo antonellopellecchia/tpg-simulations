@@ -1,0 +1,100 @@
+000 (5775506.000.000) 10/01 23:38:31 Job submitted from host: <90.147.169.224:9618?addrs=90.147.169.224-9618+[--1]-9618&noUDP&sock=5858_ade1_3>
+...
+009 (5775506.000.000) 10/01 23:39:17 Job was aborted by the user.
+	via condor_rm (by user antonellopellecchia)
+...
+000 (5775507.000.000) 10/01 23:39:49 Job submitted from host: <90.147.169.224:9618?addrs=90.147.169.224-9618+[--1]-9618&noUDP&sock=5858_ade1_3>
+...
+001 (5775507.000.000) 10/01 23:53:54 Job executing on host: <90.147.169.144:9618?addrs=90.147.169.144-9618+[--1]-9618&noUDP&sock=1686_08c4_3>
+...
+006 (5775507.000.000) 10/01 23:54:02 Image size of job updated: 396476
+	371  -  MemoryUsage of job (MB)
+	379896  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/01 23:59:02 Image size of job updated: 3908348
+	3801  -  MemoryUsage of job (MB)
+	3891760  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:04:03 Image size of job updated: 7401328
+	7212  -  MemoryUsage of job (MB)
+	7384740  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:09:04 Image size of job updated: 10863472
+	10593  -  MemoryUsage of job (MB)
+	10846884  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:14:05 Image size of job updated: 14318712
+	13967  -  MemoryUsage of job (MB)
+	14302124  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:19:06 Image size of job updated: 17267648
+	15128  -  MemoryUsage of job (MB)
+	15490952  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:24:06 Image size of job updated: 20339556
+	15128  -  MemoryUsage of job (MB)
+	15490952  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:29:07 Image size of job updated: 23793104
+	15128  -  MemoryUsage of job (MB)
+	15490952  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:34:07 Image size of job updated: 26832520
+	15128  -  MemoryUsage of job (MB)
+	15490952  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:39:07 Image size of job updated: 30266672
+	16004  -  MemoryUsage of job (MB)
+	16387700  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:44:08 Image size of job updated: 33721120
+	19376  -  MemoryUsage of job (MB)
+	19840564  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:49:09 Image size of job updated: 37161504
+	22735  -  MemoryUsage of job (MB)
+	23280380  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:54:09 Image size of job updated: 40592204
+	26085  -  MemoryUsage of job (MB)
+	26710852  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 00:59:09 Image size of job updated: 44024196
+	29437  -  MemoryUsage of job (MB)
+	30142672  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 01:26:39 Image size of job updated: 45438112
+	30817  -  MemoryUsage of job (MB)
+	31556472  -  ResidentSetSize of job (KB)
+...
+006 (5775507.000.000) 10/02 06:38:10 Image size of job updated: 85328584
+	30817  -  MemoryUsage of job (MB)
+	31556472  -  ResidentSetSize of job (KB)
+...
+005 (5775507.000.000) 10/02 06:38:11 Job terminated.
+	(1) Normal termination (return value 137)
+		Usr 0 01:04:24, Sys 0 00:01:27  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 01:04:24, Sys 0 00:01:27  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 4         4
+	   Disk (KB)            :        1        1   2859547
+	   Memory (MB)          :    30817     4096      4096
+...
+000 (5776135.000.000) 10/02 09:40:06 Job submitted from host: <90.147.169.224:9618?addrs=90.147.169.224-9618+[--1]-9618&noUDP&sock=5858_ade1_3>
+...
+009 (5776135.000.000) 10/02 09:49:35 Job was aborted by the user.
+	via condor_rm (by user antonellopellecchia)
+...
+000 (5776144.000.000) 10/02 09:50:12 Job submitted from host: <90.147.169.224:9618?addrs=90.147.169.224-9618+[--1]-9618&noUDP&sock=5858_ade1_3>
+...
+009 (5776144.000.000) 10/02 09:56:54 Job was aborted by the user.
+	via condor_rm (by user antonellopellecchia)
+...
+000 (5776154.000.000) 10/02 10:03:53 Job submitted from host: <90.147.169.224:9618?addrs=90.147.169.224-9618+[--1]-9618&noUDP&sock=5858_ade1_3>
+...

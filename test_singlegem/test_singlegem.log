@@ -1,0 +1,14 @@
+/BATCH  
+/COM,ANSYS RELEASE Release 17.2      BUILD 17.2      UP20160718       11:44:25
+/input,menust,tmp,  
+/GRA,POWER
+/GST,ON
+/PLO,INFO,3
+/GRO,CURL,ON
+/CPLANE,1   
+/REPLOT,RESIZE  
+WPSTYLE,,,,,,,,0
+/INPUT,'input','in','',1,0  
+/COM,ANSYS RELEASE Release 17.2      BUILD 17.2      UP20160718       11:54:34
+FINISH  
+! /EXIT,MODEL   
